@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8895-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<!----10. Crie um programa em HTML/JS no qual:
+a) Solicite o valor do salário do usuário
+b) Solicite o valor da mesada de seu filho
+c) Solicite o valor do abono de Natal
+d) Ao clicar em "Calcular saldo", calcule o saldo de seu salário que é seu salário menos a mesada mais o abono de Natal. Exiba o saldo num alerta.
+OBS: Use os operadores de "atalhos matemáticos"-->
+
+<body>
+    <input type="text" id="salario">
+    <input type="text" id="mesada">
+    <input type="text" id="abono">
+    <button onclick="salario()">calcular saldo</button>
+</body>
+
+</html>
+<script>
+    function salario() {
+        var valor = Number(salario.value);
+
+        valor -= Number(mesada.value);
+        valor += Number(abono.value);
+
+        alert(`seu saldo é de: ${valor}`);
+
+    }
+</script>
